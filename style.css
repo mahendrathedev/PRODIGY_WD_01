@@ -1,0 +1,180 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Menu */
+nav#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 15px 0;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+nav#navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav#navbar ul li {
+  margin: 0 15px;
+}
+
+nav#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* Hover Effect */
+nav#navbar ul li a:hover {
+  background-color: #555;
+  color: #ffd700;
+}
+
+/* Scrolled State */
+nav#navbar.scrolled {
+  background-color: #222;
+}
+
+/* Sections */
+section {
+  height: 100vh;
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+#home {
+  background-color: #f4f4f4;
+}
+
+#home h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+#home p {
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+#home button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#home button:hover {
+  background-color: #0056b3;
+}
+
+#about {
+  background-color: #e9ecef;
+}
+
+#about h2 {
+  font-size: 2em;
+  color: #007bff;
+}
+
+#about .image-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+#services {
+  background-color: #f8f9fa;
+}
+
+#services h2 {
+  font-size: 2em;
+  color: #28a745;
+}
+
+#services .services-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2em;
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#services .services-list li {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#services .services-list li:hover {
+  background-color: #218838;
+}
+
+#contact {
+  background-color: #fff;
+}
+
+#contact h2 {
+  font-size: 2em;
+  color: #dc3545;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact button:hover {
+  background-color: #c82333;
+}
